@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #eeeeee;
+  color: #333333;
+  font: 16px Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #9eac76;
+  outline-offset: 4px;
+}
+
+.page {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+}
+
+.wrap {
+  width: 90%;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.nav {
+  background: white;
+  border-bottom: 1px solid #cccccc;
+}
+
+.nav .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 0;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0;
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 0;
+  background: #68734f;
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  background: #e4e6e5 url("../image/hero-background.jpg") center bottom / cover no-repeat;
+  color: #333333;
+}
+
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  padding: 30px 0 70px;
+}
+
+.hero-title {
+  text-align: center;
+}
+
+.hero-title h1 {
+  margin-top: 25px;
+  font-size: 40px;
+}
+
+.panel h2,
+.bar {
+  padding: 10px;
+  background: #68734f;
+  color: white;
+  text-align: center;
+}
+
+.panel .body {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.section-title {
+  text-align: center;
+}
+
+.help,
+.ways {
+  padding: 30px 0;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.help-card img {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.help-card h3 {
+  margin: 10px 0 5px;
+  text-align: center;
+}
+
+.donate-head {
+  padding: 25px 0;
+}
+
+.donate {
+  position: relative;
+  background: #1f2a22 url("../image/donate-background.jpg") center / cover no-repeat;
+  color: white;
+}
+
+.donate::before {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  content: "";
+}
+
+.donate .wrap {
+  position: relative;
+  padding: 35px 0;
+}
+
+.donate form {
+  display: grid;
+  gap: 10px;
+  max-width: 320px;
+  margin: auto;
+  text-align: center;
+}
+
+.donate input {
+  padding: 10px;
+}
+
+.donate .btn {
+  justify-self: center;
+  background: white;
+  color: black;
+}
+
+.thanks {
+  min-height: 24px;
+}
+
+.ways figure {
+  max-width: 860px;
+  margin: 20px auto 0;
+}
+
+.bar h2 {
+  margin: 0;
+}
+
+.animals .wrap {
+  display: grid;
+  gap: 20px;
+  max-width: 880px;
+  padding: 25px 0;
+}
+
+.animal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.animal img {
+  display: block;
+  width: 430px;
+  height: 489px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.animal img[alt="Полярні ведмеді"] {
+  width: 430px;
+  height: 489px;
+}
+
+.animal .card {
+  padding: 12px;
+  border: 1px solid #cccccc;
+}
+
+.animal h3 {
+  font-size: 16px;
+}
+
+.share {
+  border-top: 1px solid #cccccc;
+}
+
+.share .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.share img {
+  width: 70px;
+}
+
+.footer {
+  padding: 10px;
+  background: #68734f;
+  color: white;
+  text-align: center;
+}
